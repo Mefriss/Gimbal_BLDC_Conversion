@@ -1,4 +1,6 @@
 $fn =  64;
+
+
 module pole_3m(){
     rotate([90,0,0]){
 cylinder(h=20,d = 3.2, center = true);}
@@ -38,6 +40,7 @@ translate([0,0,10])
 rotate([90,0,0])
 translate([60,4,-15])
 stand();}
+translate([0,0,1]){
 difference(){
     whole_stand();
             translate([0,11-3.2/2]){
@@ -52,3 +55,4 @@ difference(){
         pole_9m();
 }
 
+}

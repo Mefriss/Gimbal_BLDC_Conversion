@@ -24,9 +24,11 @@ translate([60/2,0,0])
 cube([60,30,2],center = true);	
 	cylinder(h = 2,d = 30, center = true);
 }
+translate([0,0,1]){
 arm();
 translate([0,0,10])
 rotate([90,0,0])
 pole_3m();
 translate([60,0,-1])
 stand();
+}
